@@ -93,7 +93,7 @@ for lap in df['Lap'].unique():
         lick = row['Licks']
 
         # Check the conditions and update counts
-        if 765 <= position <= 885 and lick == 1:
+        if 765 <= position <= 885 and lick == True:
             count_lick_inside_range += 1
 
     # Calculate the percentage of licks in the reward prediction zone 
