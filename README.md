@@ -4,12 +4,12 @@ This is a pipeline written in python to process the raw behavioural readouts fro
 ![image](https://github.com/EOakes01/SWBio_Assessment/assets/146095262/cde57654-442c-4a7a-805d-6d177c9d40a3)
 
 ## The code:
-The pipeline outputs the shape and structure of the data and identifies whether the animal was trained with or without reward. It also analyses the suitability of the animal for further experiments by assessing the number of laps run, and gives an indication of the level of training by quantifying whether the animal is anticipating the reward- an idication that the animal has internally mapped the virtual environment. 
+The pipeline outputs the shape and structure of the data and identifies whether the animal was trained with or without reward. It also analyses the suitability of the animal for further experiments by assessing the number of laps run, and gives an indication of the level of training by quantifying whether the animal is anticipating the reward (% licks inside reward prediction zone)- an idication that the animal has internally mapped the virtual environment. 
 
 This script could be modified for different virtual reality or freely moving tracks provided position remains a continuous variable.
 
 ## To run: 
-1. Download the python script in this repository into the same directory as the data csv file (provided for assessment via Blackboard) 
+1. Download the python script in this repository into the same directory as the data csv file (provided for assessment via Blackboard: '20231215_DG18_training1') 
 2. Ensure the seaborn (https://seaborn.pydata.org/installing.html), numpy (https://numpy.org/install/), matplotlib (https://matplotlib.org/stable/) and pandas (https://pandas.pydata.org/) libraries are all installed
 3. Column headers in the code are 'Time', 'Licks', 'Reward', 'Velocity' and 'Position'. Please alter these to fit your dataset if needed
 4. Be aware that the position threshold for end of lap is defined as position 870, this can be altered in the code to suit different VR or freely moving tracks. All other positions are defined using max and min.
